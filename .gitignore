@@ -5,4 +5,5 @@ result-*
 # Ignore automatically generated direnv output
 .direnv
 
-hosts/*/*secrets.nix
+hosts/**/secrets.nix
+hosts/**/*secrets.nix
