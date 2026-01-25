@@ -4,9 +4,17 @@ let
   # Файл должен возвращать attrset:
   # { server = "..."; server_port = ...; method = "..."; password = "..."; }
   cfg = config.my.singbox;
-  secrets = cfg.secretsSingBox;
+  secrets = import cfg.secretsSingBox;
 in
 {
+  options.my.singbox = {
+    secretsSingBox = lib.mkOption {
+      type = lib.types.nullOr lib.types.path;
+      default = null;
+      description = "Path to secrets file";
+    };
+  };
+  config = {
   services.sing-box.enable = true;
 
   services.sing-box.settings = {
@@ -37,5 +45,6 @@ in
         { inbound = "socks-in"; outbound = "ss-out"; }
       ];
     };
+  };
   };
 }

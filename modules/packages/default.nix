@@ -10,8 +10,8 @@
     nodejs docker docker-compose vscode
 
     siyuan
-    telegram-desktop discord
+    telegram-desktop
 
-    libnotify
+    libnotify logiops
   ];
 }

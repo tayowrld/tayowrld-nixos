@@ -17,6 +17,5 @@
 
   networking.hostName = "big-lesi";
   
-  my.singbox.enable = true;
-  my.singbox.secretsFile = ./sing-box-secrets.nix;
+  my.singbox.secretsSingBox = ./sing-box-secrets.nix;
 }
