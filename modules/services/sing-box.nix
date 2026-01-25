@@ -1,9 +1,10 @@
-{ ... }:
+{ lib, config, ... }:
 let
   # Секреты лежат в hosts/<host>/sing-box-secrets.nix
   # Файл должен возвращать attrset:
   # { server = "..."; server_port = ...; method = "..."; password = "..."; }
-  secrets = import ../../hosts/lesi/sing-box-secrets.nix;
+  cfg = config.my.singbox;
+  secrets = cfg.secretsSingBox;
 in
 {
   services.sing-box.enable = true;

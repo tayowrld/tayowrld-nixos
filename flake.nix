@@ -22,6 +22,12 @@
         modules = [ ./hosts/lesi/default.nix ];
       };
 
+      nixosConfigurations.big-lesi = nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = { inherit inputs; };
+        modules = [ ./hosts/big-lesi/default.nix ];
+      };
+
       formatter.${system} = pkgs.nixfmt-rfc-style;
     };
 }
