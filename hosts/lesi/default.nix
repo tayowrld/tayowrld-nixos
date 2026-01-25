@@ -18,4 +18,6 @@
   ];
 
   networking.hostName = "lesi";
+  
+  my.singbox.secretsSingBox = ./sing-box-secrets.nix;
 }
