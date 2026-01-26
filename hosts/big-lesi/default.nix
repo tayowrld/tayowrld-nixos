@@ -10,6 +10,8 @@
     ../../modules/desktop/gnome.nix
     ../../modules/networking/networkmanager-iwd.nix
     ../../modules/services/sing-box.nix
+    ../../modules/services/logiops.nix
+    ../../modules/services/docker.nix
     ../../modules/packages/default.nix
     ../../modules/users/ivankurbakov.nix
     ../../modules/core/state-version.nix
