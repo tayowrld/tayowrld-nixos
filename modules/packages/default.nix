@@ -4,12 +4,12 @@
     asahi-bless
     git vim
 
-    ghostty neovim
-    chromium firefox
+    neovim
+    firefox
 
     nodejs docker docker-compose vscode
 
-    siyuan
+    obsidian
     telegram-desktop
 
     libnotify logiops
