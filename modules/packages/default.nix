@@ -13,5 +13,8 @@
     telegram-desktop
 
     libnotify logiops
+
+    gnomeExtensions.just-perfection
+    gnomeExtensions.blur-my-shell
   ];
 }

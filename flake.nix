@@ -3,6 +3,8 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    home-manager.url = "github:nix-community/home-manager";
+    stylix.url = "github:nix-community/stylix";
     nixos-apple-silicon = {
       url = "github:tpwrules/nixos-apple-silicon";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -19,7 +21,12 @@
       nixosConfigurations.lesi = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; };
-        modules = [ ./hosts/lesi/default.nix ];
+        modules = [ 
+          ./hosts/lesi/default.nix 
+          
+          inputs.home-manager.nixosModules.home-manager
+          inputs.stylix.nixosModules.stylix
+        ];
       };
 
       nixosConfigurations.big-lesi = nixpkgs.lib.nixosSystem {
