@@ -2,14 +2,14 @@
 {
   environment.systemPackages = with pkgs; [
     asahi-bless
-    git vim
 
-    neovim
     firefox
 
     nodejs docker docker-compose vscode
+    git neovim
 
     obsidian
+    
     telegram-desktop
 
     libnotify logiops
