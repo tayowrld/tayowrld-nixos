@@ -16,5 +16,7 @@
 
     gnomeExtensions.just-perfection
     gnomeExtensions.blur-my-shell
+
+    hyprpaper nemo kitty nwg-look quickshell hyprshot mako dconf jq socat
   ];
 }
