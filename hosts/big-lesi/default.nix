@@ -7,10 +7,11 @@
     ../../modules/core/nix.nix
     ../../modules/core/zram.nix
     ../../modules/boot/systemd-boot.nix
-    ../../modules/desktop/gnome.nix
+    ../../modules/desktop/kde.nix
     ../../modules/networking/networkmanager-iwd.nix
     ../../modules/services/sing-box.nix
-    ../../modules/services/hyprland.nix
+    ../../modules/services/docker.nix
+    ../../modules/services/tailscale.nix
     ../../modules/packages/default.nix
     ../../modules/users/ivankurbakov.nix
     ../../modules/core/state-version.nix

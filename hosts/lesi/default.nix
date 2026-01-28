@@ -12,6 +12,7 @@
     ../../modules/desktop/gnome.nix
     ../../modules/networking/networkmanager-iwd.nix
     ../../modules/services/sing-box.nix
+    ../../modules/services/tailscale.nix
     ../../modules/packages/default.nix
     ../../modules/users/ivankurbakov.nix
     ../../modules/core/state-version.nix
